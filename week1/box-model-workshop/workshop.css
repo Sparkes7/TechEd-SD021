@@ -1,0 +1,21 @@
+/* "Box 1 is 10px bigger than Box 2 on all sides of the box (120 high and 120 wide) because the 10px border is not accounted within the 100px width and height specified below" */
+.box1 { 
+    width: 100px;
+    height: 100px;
+    background-color: crimson;
+    border: 10px solid black;
+}
+
+/* Box 2 is exactly 100px in height and width as specified, because the 10px border is taken into account due to the border-box value of the box-sizing property */
+.box2 {
+    width: 100px;
+    height: 100px;
+    background-color: crimson;
+    border: 10px solid black;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}

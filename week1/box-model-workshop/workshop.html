@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="workshop.css">
+</head>
+<body>
+    <a href="index.html">Box Model</a> <span>|</span>
+    <a href="scaling.html">Box Sizing</a> <span>|</span>
+    <a href="workshop.html">Box Sizing 2</a>
+
+    <h1>Box Sizing 2</h1>
+    <h3>both of these boxes have their height and width set to 100px. But they are different?</h3>
+    <h3>The first box does not have border-box applied in the box-sizing property</h3>
+    <p>Box 1 is 10px bigger than Box 2 on all sides of the box (120 high and 120 wide) because the 10px border is not accounted within the 100px width and height specified below</p>
+    <div class="box1"><p>BOX 1</p></div>
+    <p>Box 2 is exactly 100px in height and width as specified, because the 10px border is taken into account due to the border-box value of the box-sizing property </p>
+    <div class="box2"><p>BOX 2</p></div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: cornsilk;
+  border: 2px solid black;
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  text-align: center;
+}
+
+.box {
+  height: 50px;
+  width: 50px;
+  background-color: crimson;
+  border: 1px solid black;
+  text-align: center;
+  color: white;
+  font-weight: 800;
+}
+
+.box1 {
+  margin: 0px;
+  padding: 0px;
+}
+
+.box2 {
+  margin: 20px;
+  padding: 0px;
+}
+
+.box3 {
+  margin: 0px;
+  padding: 20px;
+}
+
+.box4 {
+  margin: 20px;
+  padding: 20px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.dog {
+  width: 25%;
+  height: 500px;
+  border: 10px solid red;
+}
+
+.dog2 {
+  width: 25%;
+  height: 500px;
+  border: 10px solid red;
+  box-sizing: border-box;
+}
