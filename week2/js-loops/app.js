@@ -40,13 +40,19 @@ for (let movie of nolanMovies) {
   moviesDiv.appendChild(newText);
 }
 
+// While Loop
 let dice = null;
 let timesRolled = 0;
 const targetRoll = 6;
 
+// This loop is useful because the amount of times the dice will need to run changes every time.
 while (dice != targetRoll) {
   dice = Math.ceil(Math.random() * 6);
   timesRolled++;
-  console.log("Dice Rolled a " + dice);
+  console.log(`Dice Rolled a ${dice}`);
 }
 console.log(`The dice was rolled ${timesRolled} times`);
+console.log("==================");
+
+//forEach() is a method of arrays that allows us to run a function for each item in the array
+nolanMovies.forEach((movie) => console.log(movie));
