@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(10, 10, 10);
+  color: white;
+}
+
+audio {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+}
+/* https://stackoverflow.com/questions/4126708/how-to-style-html5-audio-tag*/
+audio::-webkit-media-controls-panel {
+  background-color: olive;
+}
+
+video {
+  width: 50%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}

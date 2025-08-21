@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Media Elements</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Media Elements</h1>
+    <div class="img-container">
+      <!-- Images: 
+    alt text: accessibility, SEO, as a back-up for network or src issues
+    we don't always need alt text, if the image is purely decorative.
+    width and height attributes also exist to set those properties -->
+
+      <img
+        src="./assets/images/mountaineering.jpg"
+        alt="A man hiking down a path away from the camera with a backpack surrounded by hills and mountains"
+        width="30%"
+      />
+      <img
+        src="./assets/images/nature.jpg"
+        alt="a beautiful landscape shot of trees on a hillside surrounded by mountains"
+        width="30%"
+      />
+      <img
+        src="./assets/images/georgia.jpg"
+        alt="A valley surrounded by the
+    rugged mountains of Georgia"
+        width="30%"
+      />
+    </div>
+    <!-- Audio: 
+     src: We first need a src to a url or path. Start the path with ./ (dot slash) to navigate from the root.
+     controls: adds the controls to the page
+        autoplay
+        loop
+        muted -->
+    <audio
+      src="./assets/audio/carpathian-mountains.mp3"
+      controls
+      loop
+      controlslist="play timeline nodownload nofullscreen"
+    ></audio>
+
+    <div class="container">
+      <!-- Video:
+     Very similar to audio: src, controls, loop, autoplay, muted
+     video specific attribute: "poster"  sets the thumbnail of the video -->
+      <video src="./assets/videos/mountain-timelapse.mp4" controls></video>
+    </div>
+    <div class="container">
+      <!-- iframe:
+      a box that displays source from somewhere else, such as a video from youtube, or an article from another site -->
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/qxo3lKLqiTU?si=b1QYVbuTuWaA-1cO"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </body>
+</html>
