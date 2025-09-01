@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#movie-results {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+
+.movie-box {
+  background-color: #333;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  font-family: monospace;
+}

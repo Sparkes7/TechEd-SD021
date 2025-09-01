@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML and JS Forms</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <form id="user-form">
+      <!-- labels and inputs -->
+      <label for="name">Username: </label>
+      <!-- for="" attribute matches with the name="" attribute on the input-->
+      <input type="text" name="name" placeholder="enter username" />
+      <!-- name="" attribute describes the data for the input-->
+      <!-- "This is a label FOR input NAMED ..." -->
+      <br />
+      <label for="password">Password: </label>
+      <!-- type="" attribute is for validation.  -->
+      <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input -->
+      <input type="password" name="password" placeholder="enter a password" />
+      <br />
+      <label for="terms">Terms and Conditions</label>
+      <!-- required attribute means that the user MUST tick this. Put this on any fields that are required to submit the form. -->
+      <input type="checkbox" name="terms" required />
+      <br />
+      <label for="message">Enter a message: </label>
+      <!-- Text Areas are a type of input for user to type larger amounts of text that has its own attributes -->
+      <!-- rows and cols determine the size. -->
+      <textarea
+        rows="2"
+        name="message"
+        id=""
+        placeholder="Enter a message..."
+      ></textarea>
+      <br />
+      <!-- type="submit" for button submit form -->
+      <button id="submit-form" type="submit">Submit</button>
+    </form>
+  </body>
+</html>

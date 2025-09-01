@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms Workshop</title>
+    <script src="./workshopapp.js" defer></script>
+  </head>
+  <body>
+    <form id="user-data">
+      <label for="email">Email: </label>
+      <input type="email" name="email" id="email" required />
+      <br />
+      <label for="">Password: </label>
+      <input type="password" name="password" id="password" required />
+      <br />
+      <button type="submit">Submit Form</button>
+    </form>
+    <hr />
+    <hr />
+    <form id="race-form">
+      <label for="race-type">Select an account type: </label>
+      <br />
+      <label for="free">5k: </label>
+      <input type="radio" name="race-type" value="free" id="free" />
+      <br />
+      <label for="premium">10k: </label>
+      <input type="radio" name="race-type" value="premium" id="premium" />
+      <br />
+      <label for="colour">Choose your race colour: </label>
+      <input type="color" name="colour" id="colour" />
+      <br />
+      <label for="fitness-range">Fitness level: </label>
+      <input type="range" name="fitness-range" id="fitness-range" max="10" />
+      <br />
+      <button type="submit">Confirm Signup Choice</button>
+    </form>
+  </body>
+</html>
